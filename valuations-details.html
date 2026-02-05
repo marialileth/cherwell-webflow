@@ -1,0 +1,60 @@
+<div class="structured-table-details text-size-small table-list" v-if="open == product.planId">
+<div class="structured-table-details-list col">
+	<div class="text-weight-bold structured-table-detail">
+    <span class="structured-table-label">Barrier:</span>
+    <div class="text-weight-medium">{{ product['initialCapitalReturnBarrier'] || '' }}</div></div>
+  <div class="text-weight-bold structured-table-detail">
+    <span class="structured-table-label">Return:</span>
+    <div class="text-weight-medium">{{ product['return'] || '---' }}</div></div>
+
+  <div class="text-weight-bold structured-table-detail">
+    <span class="structured-table-label">Kickout Trigger Level:</span>
+    <div class="text-weight-medium">{{ product['kickoutTriggerLevel'] || '---' }}</div></div>
+  <div class="text-weight-bold structured-table-detail">
+    <span class="structured-table-label">Next KO Observation:</span>
+    <div class="text-weight-medium">---</div></div>
+  <div class="text-weight-bold structured-table-detail">
+    
+    <span class="structured-table-label">Next KO Trigger:</span>
+    <div class="text-weight-medium">{{ product.nextKOTrigger || '---' }}</div></div>
+  <div class="text-weight-bold structured-table-detail">
+    <span class="structured-table-label">Next Income Observation:</span>
+    <div class="text-weight-medium">{{ product.nextIncomeObservation || '---' }}</div></div>
+  <div class="text-weight-bold structured-table-detail">
+    <span class="structured-table-label">Next Income Trigger:</span>
+    <div class="text-weight-medium">{{ product.nextIncomeTrigger || '---' }}</div>
+  </div>
+
+</div>
+
+<div class="structured-table-details-list col">
+  <div class="text-weight-bold structured-table-detail">
+    <span class="structured-table-label">Underlyings:</span>
+    <div class="text-weight-medium">{{ product.underlying || '---' }}</div>
+  </div>
+  <div class="text-weight-bold structured-table-detail">
+    
+    <span class="structured-table-label">Start Level:</span>
+    <div class="text-weight-medium">{{ product.startLevel || '---' }}</div>
+  </div>
+  <div class="text-weight-bold structured-table-detail">
+    
+    <span class="structured-table-label">Last CoB Level: </span>
+    <div class="text-weight-medium">{{ product.lastCoBLevel || '---' }}</div>
+  </div>
+  <div class="text-weight-bold structured-table-detail">
+    
+    <span class="structured-table-label">% Change: </span>
+    <div class="text-weight-medium">{{ product.percentChange || '---' }}</div>
+  </div>
+</div>
+  
+  <!--div class="table-list-item structured-table-list-item alternate">
+  	<p class="">Barrier: <strong>50% European</strong></p>
+    <p class="text-size-small">60% Europoean</p>
+    <p class="text-family-heading">Underlyings</p>
+    <p class="text-size-small">
+    	FTSE 100 INDEX (UKX)Euro Stoxx 50 Pr (SX5E)S&P 500 INDEX (SPX)
+    </p>
+  </div-->
+</div>
